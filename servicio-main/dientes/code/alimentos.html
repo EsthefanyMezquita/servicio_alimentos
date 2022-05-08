@@ -1,0 +1,21 @@
+<head th:fragment="head">
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="alimentos.css" />
+</head>
+<div class="container">
+	<div class="game">
+    <div class="diente-triste droppable" id="diente-triste">
+      <img src="diente triste.png" class="triste" data-draggable-id="diente-triste"/>
+    </div>
+    <div class="diente-feliz droppable" id="diente-feliz" data-draggable-id="diente-feliz">
+      <img src="diente feliz.png" class="feliz"/>
+    </div>
+    
+
+    <div class="alimentos">
+      <img src="brocoli.png" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+      <img src="galleta.png" class="galleta draggable" draggable="true" data-diente="diente-triste" />
+    </div>
+  </div>
+</div>
+<script src="interactions.js"></script>

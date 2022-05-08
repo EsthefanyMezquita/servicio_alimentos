@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Drag and Drop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="alimentos.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">
+  <script src="alimentosfinal.js"></script>
+  
+</head>
+
+<body>
+  <section class="draggable-elements">
+    <img src="../iconos/twemoji_broccoli.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+    <img src="../iconos/twemoji_moon-cake.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz"/>
+    <img src="../iconos/noto_carrot.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+    <img src="../iconos/mdi_bottle-soda.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+    <img src="../iconos/fxemoji_tomato.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+    <img src="../iconos/emojione_green-apple.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+    <img src="../iconos/emojione_egg.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+    <img src="../iconos/emojione_cookie.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+    <img src="../iconos/emojione_candy.svg" class="brocoli draggable" draggable="true" data-diente="diente-feliz" />
+    <!-- <i class="fas fa-horse draggable" draggable="true" style="color: #333333;" id="horse"></i>
+    <i class="fas fa-hippo draggable" draggable="true" style="color: #ff9f40;" id="hippo"></i>
+    <i class="fas fa-spider draggable" draggable="true" style="color: #ff99cc;" id="spider"></i> -->
+  </section>
+  <section class="droppable-elements">
+    <div class="diente-triste droppable" id="diente-triste">
+      <img src="diente triste.png" class="triste" data-draggable-id="diente-triste"/>
+    </div>
+    <div class="diente-feliz droppable" id="diente-feliz" data-draggable-id="diente-feliz">
+      <img src="diente feliz.png" class="feliz"/>
+    </div>
+    <!-- <div class="droppable" data-draggable-id="spider"><span>Spider</span></div>
+    <div class="droppable" data-draggable-id="horse"><span>Horse</span></div>
+    <div class="droppable" data-draggable-id="hippo"><span>Hippo</span></div> -->
+  </section>
+
+ 
+
+</body>
+</html>

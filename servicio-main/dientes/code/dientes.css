@@ -1,0 +1,85 @@
+body{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    cursor: url("cepillo.png"), auto;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.game {
+    z-index: -1;
+    width: 80vw;
+    min-height: 90vh;
+    margin: 0 auto;
+    background-image: url("backboca.png");
+    background-size:cover;
+ 
+    
+}
+.marcador{
+    text-align: right;
+}
+
+h4#puntosMarcador{
+    text-align: right;
+    font-size: large;
+    margin-right: 2%;
+}
+.manchas, .manchasLengua {
+    height: 45px;
+    width: 45px;
+}
+
+img#a0.manchas{
+    position: absolute;
+    top: 30%; left: 19%;
+}
+
+
+img#a1.manchas{
+    position: absolute;
+    top: 26%; left: 24%;
+}
+img#a2.manchas{
+    position: absolute;
+    top: 23%; left: 27%;
+}
+ 
+img#a3.manchas{
+    position: absolute;
+    top: 25%; left: 34%;
+}
+
+img#a4.manchas{
+    position: absolute;
+    top: 30%; left: 42%;
+}
+
+img#a5.manchas{
+    position: absolute;
+    top: 76%; left: 25%;
+}
+
+img#a6.manchas{
+    position: absolute;
+    top: 78%; left: 29%;
+}
+
+img#a7.manchas{
+    position: absolute;
+    top: 78%; left: 32%;
+}
+
+img#a0.manchasLengua{
+    position: absolute;
+    top: 60%; left: 32%;
+    
+}
+img#a1.manchasLengua{
+    position: absolute;
+    top: 60%; left: 39%;
+    
+}

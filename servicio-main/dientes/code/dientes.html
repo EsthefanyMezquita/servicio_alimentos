@@ -1,0 +1,132 @@
+<head th:fragment="head">
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="dientes.css" />
+</head>
+<div class="container">
+	<div class="game">
+    <img src="mancha.png" class="manchas"/>
+    <img src="mancha.png" class="manchas"/>
+    <img src="mancha.png" class="manchas"/>
+    <img src="mancha.png" class="manchas"/>
+    <img src="mancha.png" class="manchas"/>
+    <img src="mancha.png" class="manchas"/>
+    <img src="mancha.png" class="manchas"/>
+    <img src="mancha.png" class="manchas"/>
+    <img src="mancha.png" class="manchasLengua"/>
+    <img src="mancha.png" class="manchasLengua"/>
+    <div class="marcador">
+      <h4 id="puntosMarcador">Puntos:  </h4>
+      
+    </div>
+  </div>
+</div>
+<script src="interactions.js"></script>
+<script>
+	/*function copyImageToCanvas(){ 
+      var manchita= document.getElementById("mancha");
+      var canvas = document.getElementById("gameCanvas");
+
+
+      var ctx = canvas.getContext('2d');
+      ctx.drawImage(
+        manchita,900,140,150,30
+      )
+
+      ctx.drawImage(
+        manchita,2100,140,150,30
+      )
+      ctx.drawImage(
+        manchita,1400,140,150,30
+      )
+
+      ctx.drawImage(
+        manchita,1800,120,150,30
+      )
+
+      ctx.drawImage(
+        manchita,1800,120,150,30
+      )
+      
+
+    }*/
+
+	/*setTimeout(()=>{
+      copyImageToCanvas();
+    },300
+    )*/
+
+	/*canvas.addEventListener('click', function() {}, false);
+    var e = document.getElementById('gameCanvas'),
+   elemLeft = e.offsetLeft,
+   elemTop = e.offsetTop,
+   context = e.getContext('2d'),
+   elements = [];*/
+
+	// event listener for click event
+	/*e.addEventListener('click', function(event) {
+         var xVal = event.pageX - elemLeft,
+            yVal = event.pageY - elemTop;
+         console.log(xVal, yVal);
+         elements.forEach(function(ele) {
+               if (yVal > ele.top && yVal < ele.top + ele.height && xVal > ele.left && xVal < ele.left + ele.width) {
+                  alert('element clicked ');
+                  }
+               });
+         }, false); elements.push({
+         colour: '#1C2128',
+         width: 250,
+         height: 200,
+         top: 30,
+         left: 20
+      }); elements.forEach(function(ele) {
+         context.fillStyle = element.colour;
+         context.fillRect(ele.left, ele.top, ele.width, ele.height);
+      });*/
+
+	//ya esta
+	/*$(window).load(function(){
+$(function() {
+$("#gameCanvas").on('click', function() {
+  $("#mancha").css("opacity", "0.1");
+});
+});
+});
+*/
+
+	/*  function copyImagetoCanvas(){
+      var manchita= document.getElementById("mancha");
+      var canvas = document.getElementById("gameCanvas");
+
+      var imgCloud = document.getElementById("cloud");
+        ctx.drawImage(img, player.x, player.y, player.width, player.height);
+        ctx.drawImage(imgCloud, cloud.x, cloud.y, cloud.width, cloud.height);
+        cloud.x = cloud.x + cloud.speedX;
+        if (cloud.x > container.width) {
+            cloud.x = (cloud.width * -1) - 20;
+        }
+      
+      var ctx = canvas.getContext("2d");
+
+      ctx.drawImage(
+        manchita,50,50,10,10
+      )
+
+
+    }
+   
+
+      
+  
+
+  
+      loadImages(sources, function(images) {
+        context.drawImage(manchita, 100, 30, 200, 137);
+        context.drawImage(manchita, 350, 55, 93, 104);
+      });
+
+      */
+	//codigo para desaparecer la mancha
+	function one() {
+		document.getElementById("mancha").style.opacity = "0";
+	}
+</script>
