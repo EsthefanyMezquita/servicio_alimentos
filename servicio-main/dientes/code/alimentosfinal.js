@@ -19,6 +19,7 @@ droppableElements.forEach(elem => {
 //Events fired on the drag target
 
 function dragStart(event) {
+  console.log(event.target.id);
   event.dataTransfer.setData("text", event.target.id); // or "text/plain" but just "text" would also be fine since we are not setting any other type/format for data value
 }
 
@@ -42,19 +43,31 @@ function dragLeave(event) {
   }
 }
 
+function checkFinal(){
+  const dragged = document.querySelectorAll(".dragged");
+  console.log(dragged.length);
+  if(dragged.length === 9){
+    alert("bien hecho!");
+    }
+}
+
 function drop(event) {
   event.preventDefault(); // This is in order to prevent the browser default handling of the data
-  event.target.classList.remove("droppable-hover");
-  const draggableElementData = event.dataTransfer.getData("text"); // Get the dragged data. This method will return any data that was set to the same type in the setData() method
+  //event.target.classList.remove("droppable-hover");
+  const elementDrag =  document.getElementById(event.dataTransfer.getData("text")); // Get the dragged data. This method will return any data that was set to the same type in the setData() method
   const droppableElementData = event.target.getAttribute("data-draggable-id");
-  const isCorrectMatching = draggableElementData === droppableElementData;
+  const isCorrectMatching = droppableElementData === elementDrag.getAttribute('data-diente');
   if(isCorrectMatching) {
-    const draggableElement = document.getElementById(draggableElementData);
-    event.target.classList.add("dropped");
+    //event.target.classList.add("dropped");
     // event.target.style.backgroundColor = draggableElement.style.color; // This approach works only for inline styles. A more general approach would be the following: 
-    event.target.style.backgroundColor = window.getComputedStyle(draggableElement).color;
-    draggableElement.classList.add("dragged");
-    draggableElement.setAttribute("draggable", "false");
-    event.target.insertAdjacentHTML("afterbegin", `<i class="fas fa-${draggableElementData}"></i>`);
+    elementDrag.classList.add("dragged");
+    const contenedorDiente = document.getElementById(droppableElementData );
+    const item = document.createElement('img');
+    item.setAttribute('src', elementDrag.getAttribute('src'));
+    item.style = "z-index:1;";
+    contenedorDiente.appendChild(item);
+    checkFinal();
+  }else{
+    return;
   }
 }

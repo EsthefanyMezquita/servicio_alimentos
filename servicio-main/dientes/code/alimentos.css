@@ -89,3 +89,17 @@ body {
   html { font-size: 14px; }
   .draggable-elements { margin: 1.5rem; }
 }
+
+.diente-feliz {
+  background-image: url('diente feliz.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.diente-triste {
+  background-image: url('diente triste.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
